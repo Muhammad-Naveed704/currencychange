@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    rgba(30, 75, 116, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+.container {
+  background: url(/currency.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 70%;
+  border-radius: 20px;
+  box-shadow: 5px 12px 20px 4px rgb(204, 52, 189);
+  height: 80%;
+}
+.inputArea {
+  margin-top: 8rem !important;
+  margin: auto auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 60px;
+  flex-wrap: wrap;
+}
+
+.inputArea input {
+  background: whitesmoke;
+
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 4px blue;
+  border: none;
+
+  width: 480px;
+  height: 40px;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(44, 41, 41);
+}
+
+.resutlArea {
+  border: none;
+  background: whitesmoke;
+  width: 70%;
+  height: 80px;
+  padding-left: 13px;
+  box-shadow: 1px 1px 10px 4px blue;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 5rem !important;
+  margin: auto auto;
+}
+.To {
+  color: whitesmoke;
+  background-color: black;
+  width: 60px;
+  height: 50px;
+  padding-left: 8px;
+  padding-top: 2px;
+  border-radius: 10px;
+}
+.btn {
+  padding-left: 10px;
+  background-color: whitesmoke;
+  border: none;
+  cursor: pointer;
+  width: 170px;
+  height: 40px;
+  box-shadow: 1px 1px 10px 4px blue;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+@media (max-width: 440px) {
+  .inputArea {
+    height: 60%;
+    margin-top: 1rem !important;
+  }
+  .container {
+    width: 100% !important;
+  }
+  .inputArea input {
+    width: 260px;
+    display: inline-block;
+    font-size: 0.9rem;
+  }
+  .btn {
+    margin-left: 3rem;
+    margin-top: 1rem;
+    width: 50%;
+    font-size: 0.8rem;
+    margin-right: 3.5rem;
+  }
+  .To {
+    margin-left: 3rem;
+    margin-right: 3.5rem;
+    font-size: 1.5rem;
+    color: rgb(255, 0, 0);
+    background: whitesmoke;
+    padding: 8px 0 0 14px;
+    margin-top: 1rem;
+  }
+
+  .resutlArea {
+    margin-top: 1.5rem !important;
+    width: 85% !important;
+    height: 40px;
+    font-size: 0.7rem;
+  }
+}
